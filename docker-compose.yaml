@@ -1,0 +1,12 @@
+services:
+
+  whatsupdocker:
+    image: getwud/wud:latest
+    container_name: wud
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "3100:3000"
+    environment:
+      - TZ=Europe/Madrid
