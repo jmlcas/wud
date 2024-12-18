@@ -6,7 +6,11 @@ services:
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - /opt/wud/store:/store
     ports:
       - "3100:3000"
     environment:
       - TZ=Europe/Madrid
+      - WUD_AUTH_BASIC_JOHN_USER=User
+      - WUD_AUTH_BASIC_JOHN_HASH=p4ssw0rd
+      
