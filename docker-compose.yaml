@@ -11,5 +11,5 @@ services:
       - "3100:3000"
     environment:
       - TZ=Europe/Madrid
-      - WUD_AUTH_BASIC_JOHN_USER=User
-      - WUD_AUTH_BASIC_JOHN_HASH=p4ssw0rd
+      - WUD_AUTH_ADMIN_USER=User
+      - WUD_AUTH_ADMIN_PASSWORD=p4ssw0rd
